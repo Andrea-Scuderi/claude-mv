@@ -15,7 +15,8 @@ struct ClaudeMV: ParsableCommand {
             Use --already-moved when the directory has already been renamed by another tool.
             In that case, old_directory must be the original *absolute* path (it no longer
             needs to exist on disk).
-            """
+            """,
+        version: "1.0.0-alpha.1"
     )
 
     @Flag(name: .long, help: "Skip the directory rename; only migrate Claude context.")
